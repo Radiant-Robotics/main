@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiant Robotics | Inspiring the Next Generation</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for the 'Inter' font and new custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        // New brand colors based on the logo
+                        'radiant-gold': '#E89D3C', 
+                        'radiant-purple': '#6E5A8E', 
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Use Inter font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+
+    <div id="app" class="min-h-screen flex flex-col">
+
+        <!-- Header / Navigation -->
+        <header class="bg-white shadow-md sticky top-0 z-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+                <!-- LOGO INTEGRATION: Using the uploaded image -->
+                <a href="#" class="h-8 md:h-10 flex items-center">
+                    <img src="uploaded:RadiantRobotics.org.jpg-e5415822-81dd-484a-9516-b783bf418a4a" alt="Radiant Robotics Logo" class="h-full w-auto">
+                </a>
+                <!-- Simple Mobile Menu Placeholder (for future links) -->
+                <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                    <!-- Updated hover color to Radiant Gold -->
+                    <a href="#mission" class="text-gray-600 hover:text-radiant-gold transition duration-150">Our Mission</a>
+                    <a href="#programs" class="text-gray-600 hover:text-radiant-gold transition duration-150">Programs</a>
+                    <a href="#support" class="text-gray-600 hover:text-radiant-gold transition duration-150">Support Us</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <main class="flex-grow">
+            <!-- Updated background to Radiant Purple -->
+            <section class="bg-radiant-purple py-16 sm:py-24 text-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <!-- Removed emoji icon to focus on the text and logo in the header -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
+                        Illuminating Pathways. <span class="text-radiant-gold">Inspiring Innovators.</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl font-light max-w-3xl mx-auto opacity-90">
+                        Empowering the next generation with hands-on STEM and competitive robotics excellence.
+                    </p>
+                    <!-- Updated CTA button to use Radiant Gold text on White background -->
+                    <a href="#support" class="mt-8 inline-block bg-white text-radiant-gold font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
+                        Get Involved Today
+                    </a>
+                </div>
+            </section>
+
+            <!-- Mission Statement Section -->
+            <section id="mission" class="py-16 sm:py-20 bg-white">
+                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Our Core Mission</h2>
+                    
+                    <!-- Updated border accent to Radiant Gold -->
+                    <div class="bg-gray-50 border-l-4 border-radiant-gold p-6 rounded-xl shadow-lg">
+                        <p class="text-lg text-gray-700 italic">
+                            "To illuminate pathways in STEM education through engaging robotics programs and robust support for competitive robotics, inspiring the next generation of innovators."
+                        </p>
+                        <p class="mt-4 text-sm font-semibold text-gray-600">
+                            — Radiant Robotics Founding Statement
+                        </p>
+                    </div>
+
+                    <p class="mt-10 text-center text-gray-600 max-w-2xl mx-auto">
+                        We believe that hands-on experience is the best teacher. By providing accessible and high-quality robotics education, we ensure that every student has the chance to build a brighter future.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Programs Section -->
+            <section id="programs" class="py-16 sm:py-20 bg-gray-50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">What We Do</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        
+                        <!-- Program Card 1: Educational Robotics -->
+                        <!-- Updated icon color and border color to Radiant Gold -->
+                        <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-radiant-gold transform hover:scale-[1.01] transition duration-300">
+                            <div class="text-5xl text-radiant-gold mb-4">💡</div>
+                            <h3 class="text-xl font-semibold mb-3 text-gray-900">Engaging STEM Education</h3>
+                            <p class="text-gray-600">
+                                Our educational programs introduce foundational concepts in programming, engineering, and design to students of all ages. From simple circuit building to complex autonomous robot movements, we make learning fun and tangible.
+                            </p>
+                        </div>
+                        
+                        <!-- Program Card 2: Competitive Robotics Support -->
+                        <!-- Updated icon color and border color to Radiant Gold -->
+                        <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-radiant-gold transform hover:scale-[1.01] transition duration-300">
+                            <div class="text-5xl text-radiant-gold mb-4">🏆</div>
+                            <h3 class="text-xl font-semibold mb-3 text-gray-900">Competitive Excellence</h3>
+                            <p class="text-gray-600">
+                                We provide coaching, resources, and logistical support for teams competing in VEX, FIRST, and other major robotics leagues. We focus on teamwork, problem-solving, and professional mentorship.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Support CTA Section -->
+            <section id="support" class="py-16 sm:py-20 bg-white">
+                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Help Us Inspire More Futures</h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Your support directly funds kits, tournament fees, and scholarships for underserved students. Join the mission!
+                    </p>
+                    <!-- Updated Donate button to use Radiant Gold -->
+                    <a href="#" class="inline-block bg-radiant-gold text-white font-bold py-3 px-10 rounded-full shadow-lg hover:opacity-90 transition duration-300 transform hover:scale-105 text-lg">
+                        Donate Now
+                    </a>
+                    <a href="#" class="ml-4 inline-block bg-gray-200 text-gray-800 font-bold py-3 px-10 rounded-full shadow-md hover:bg-gray-300 transition duration-300 transform hover:scale-105 text-lg">
+                        Volunteer
+                    </a>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <!-- Updated background to Radiant Purple -->
+        <footer class="bg-radiant-purple text-white py-8 mt-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+                <p>&copy; 2025 Radiant Robotics. All rights reserved.</p>
+                <p class="mt-2 text-gray-400">
+                    <!-- Updated hover color to Radiant Gold -->
+                    <a href="#" class="hover:text-radiant-gold transition duration-150">Privacy Policy</a> | 
+                    <a href="#" class="hover:text-radiant-gold transition duration-150">Contact Us</a>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
