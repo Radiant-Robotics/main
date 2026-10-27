@@ -1,159 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radiant Robotics | Inspiring the Next Generation</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <!-- Load Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Configure Tailwind for the 'Inter' font and new custom colors -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        // New brand colors based on the logo
-                        'radiant-gold': '#E89D3C', 
-                        'radiant-purple': '#6E5A8E', 
-                    }
-                }
-            }
-        }
-    </script>
-    <!-- Use Inter font -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Radiant Robotics | Illuminating Pathways in STEM</title>
+  <meta name="description" content="Radiant Robotics is a nonprofit that illuminates pathways in STEM education through engaging robotics programs and robust support for competitive robotics teams.">
+  <link rel="canonical" href="https://radiantrobotics.org/">
+  <meta name="theme-color" content="#1E1630">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Radiant Robotics">
+  <meta property="og:title" content="Radiant Robotics | Illuminating Pathways in STEM">
+  <meta property="og:description" content="Hands-on STEM education and support for competitive robotics teams.">
+  <meta property="og:url" content="https://radiantrobotics.org/">
+  <meta property="og:image" content="https://radiantrobotics.org/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "Radiant Robotics",
+    "url": "https://radiantrobotics.org/",
+    "logo": "https://radiantrobotics.org/brand/logo/radiant-robotics-stacked.svg",
+    "email": "allen@radiantrobotics.org",
+    "description": "Illuminating pathways in STEM education through engaging robotics programs and robust support for competitive robotics."
+  }
+  </script>
 </head>
-<body class="font-sans bg-gray-50 text-gray-800">
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <div id="app" class="min-h-screen flex flex-col">
-
-        <!-- Header / Navigation -->
-        <header class="bg-white shadow-md sticky top-0 z-10">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
-                <!-- LOGO INTEGRATION: Using the uploaded image -->
-                <a href="#" class="h-8 md:h-10 flex items-center">
-                    <img src="./RadiantRoboticsStarBurstHorizontalLogo-Starburst.png" alt="Radiant Robotics Logo" class="h-full w-auto">
-                </a>
-                <!-- Simple Mobile Menu Placeholder (for future links) -->
-                <nav class="hidden md:flex space-x-6 text-sm font-medium">
-                    <!-- Updated hover color to Radiant Gold -->
-                    <a href="#mission" class="text-gray-600 hover:text-radiant-gold transition duration-150">Our Mission</a>
-                    <a href="#programs" class="text-gray-600 hover:text-radiant-gold transition duration-150">Programs</a>
-                    <a href="#support" class="text-gray-600 hover:text-radiant-gold transition duration-150">Support Us</a>
-                </nav>
-            </div>
-        </header>
-
-        <!-- Hero Section -->
-        <main class="flex-grow">
-            <!-- Updated background to Radiant Purple -->
-            <section class="bg-radiant-purple py-16 sm:py-24 text-white">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <!-- Removed emoji icon to focus on the text and logo in the header -->
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
-                        Illuminating Pathways. <br> <span class="text-radiant-gold">Inspiring Innovators.</span>
-                    </h1>
-                    <p class="text-lg sm:text-xl font-light max-w-3xl mx-auto opacity-90">
-                        Empowering the next generation with hands-on STEM <br> and competitive robotics excellence.
-                    </p>
-                    <!-- Updated CTA button to use Radiant Gold text on White background -->
-                    <a href="#support" class="mt-8 inline-block bg-white text-radiant-gold font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
-                        Get Involved Today
-                    </a>
-                </div>
-            </section>
-
-            <!-- Mission Statement Section -->
-            <section id="mission" class="py-16 sm:py-20 bg-white">
-                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Our Core Mission</h2>
-                    
-                    <!-- Updated border accent to Radiant Gold -->
-                    <div class="bg-gray-50 border-l-4 border-radiant-gold p-6 rounded-xl shadow-lg">
-                        <p class="text-lg text-gray-700 italic">
-                            "To illuminate pathways in STEM education through engaging robotics programs and robust support for competitive robotics, inspiring the next generation of innovators."
-                        </p>
-                        <p class="mt-4 text-sm font-semibold text-gray-600">
-                            — Radiant Robotics Founding Statement
-                        </p>
-                    </div>
-
-                    <p class="mt-10 text-center text-gray-600 max-w-2xl mx-auto">
-                        We believe that hands-on experience is the best teacher. By providing accessible and high-quality robotics education, we ensure that every student has the chance to build a brighter future.
-                    </p>
-                </div>
-            </section>
-            
-            <!-- Programs Section -->
-            <section id="programs" class="py-16 sm:py-20 bg-gray-50">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">What We Do</h2>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        
-                        <!-- Program Card 1: Educational Robotics -->
-                        <!-- Updated icon color and border color to Radiant Gold -->
-                        <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-radiant-gold transform hover:scale-[1.01] transition duration-300">
-                            <div class="text-5xl text-radiant-gold mb-4">💡</div>
-                            <h3 class="text-xl font-semibold mb-3 text-gray-900">Engaging STEM Education</h3>
-                            <p class="text-gray-600">
-                                Our educational programs introduce foundational concepts in programming, engineering, and design to students of all ages. From simple circuit building to complex autonomous robot movements, we make learning fun and tangible.
-                            </p>
-                        </div>
-                        
-                        <!-- Program Card 2: Competitive Robotics Support -->
-                        <!-- Updated icon color and border color to Radiant Gold -->
-                        <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-radiant-gold transform hover:scale-[1.01] transition duration-300">
-                            <div class="text-5xl text-radiant-gold mb-4">🏆</div>
-                            <h3 class="text-xl font-semibold mb-3 text-gray-900">Competitive Excellence</h3>
-                            <p class="text-gray-600">
-                                We provide coaching, resources, and logistical support for teams competing in FIRST and other robotics programs. We focus on teamwork, problem-solving, and professional mentorship.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- Support CTA Section -->
-            <section id="support" class="py-16 sm:py-20 bg-white">
-                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Help Us Inspire More Futures</h2>
-                    <p class="text-lg text-gray-600 mb-8">
-                        Your support directly supports educational robotics! Join the mission!
-                    </p>
-                    <!-- Updated Donate button to use Radiant Gold -->
-                    <a href="https://www.zeffy.com/en-US/donation-form/donate-to-make-a-difference-19010" class="inline-block bg-radiant-gold text-white font-bold py-3 px-10 rounded-full shadow-lg hover:opacity-90 transition duration-300 transform hover:scale-105 text-lg">
-                        Donate Now
-                    </a>
-                    <a href="https://forms.gle/5kPcod4YxZTphQbD8" class="ml-4 inline-block bg-radiant-purple text-white font-bold py-3 px-10 rounded-full shadow-md hover:bg-radiant-gold hover:text-white transition duration-300 transform hover:scale-105 text-lg">
-                        Volunteer
-                    </a>
-                </div>
-            </section>
-
-        </main>
-
-        <!-- Footer -->
-        <!-- Updated background to Radiant Purple -->
-        <footer class="bg-radiant-purple text-white py-8 mt-12">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
-                <p class="mt-2 text-gray-200">
-            Director Contact: Allen Gregory IV - <a href="mailto:Allen@radiantrobotics.org" class="hover:text-radiant-gold transition duration-150">Allen@radiantrobotics.org</a>
-            </p>
-                <p>&copy; 2025 Radiant Robotics. All rights reserved.</p>
-                <p class="mt-2 text-gray-400">
-                    <!-- Updated hover color to Radiant Gold -->
-                    <a href="email:allen@radiantrobotics.org" class="hover:text-radiant-gold transition duration-150">Contact Us</a>
-                </p>
-            </div>
-        </footer>
-
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/" aria-label="Radiant Robotics home">
+        <img src="/brand/logo/radiant-robotics-horizontal.svg" alt="Radiant Robotics" width="268" height="30">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#get-involved">Get Involved</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-primary" href="https://www.zeffy.com/en-US/donation-form/donate-to-make-a-difference-19010">Donate</a>
+      </nav>
     </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero on-dark">
+      <img class="hero-burst" src="/brand/logo/radiant-robotics-burst-reversed.svg" alt="" aria-hidden="true">
+      <div class="container">
+        <div class="hero-copy">
+          <span class="eyebrow">STEM education &middot; Competitive robotics</span>
+          <h1>Illuminating pathways. <span class="accent">Inspiring innovators.</span></h1>
+          <p class="lead">Radiant Robotics empowers the next generation with hands-on STEM learning and the coaching, resources, and support that competitive robotics teams need to thrive.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#get-involved">Get involved</a>
+            <a class="btn btn-ghost" href="#programs">See what we do</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who we are -->
+    <section class="section" id="about">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">Who we are</span>
+          <h2>A nonprofit devoted to robotics education</h2>
+          <p class="lead">Radiant Robotics is a nonprofit organization that brings robotics to students in two ways: engaging STEM education programs, and robust support for competitive robotics teams.</p>
+          <p>Robotics brings together coding, mechanical design, electronics, and teamwork in a way few other activities can. When students design a robot, test it, and watch it work, they see that they can solve hard problems. That moment of discovery is what we're here for.</p>
+          <p>Our name reflects that goal. We want to be a source of light, illuminating pathways into STEM for students who might never have imagined themselves as engineers, programmers, or inventors.</p>
+        </div>
+        <div class="panel" aria-hidden="true">
+          <img class="panel-art" src="/brand/logo/radiant-robotics-stacked-reversed.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- What we do -->
+    <section class="section section-alt" id="programs">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">What we do</span>
+          <h2>Two ways we bring robotics to more students</h2>
+        </div>
+
+        <div class="grid grid-2">
+          <article class="card card-feature">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.2 1 2V17h6v-.3c0-.8.4-1.5 1-2A7 7 0 0 0 12 2z"/></svg>
+            </div>
+            <h3>Engaging STEM education</h3>
+            <p>Our educational programs introduce the foundations of programming, engineering, and design to students of all ages. From simple circuit building to autonomous robot movement, we make learning fun and tangible.</p>
+          </article>
+
+          <article class="card card-feature">
+            <div class="icon purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4"/><path d="M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg>
+            </div>
+            <h3>Competitive excellence</h3>
+            <p>We provide coaching, resources, and logistical support for teams competing in <em>FIRST</em> and other robotics programs, with a focus on teamwork, problem solving, and professional mentorship.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="section-tight">
+      <div class="container">
+        <figure class="mission" style="margin:0">
+          <span class="eyebrow">Our mission</span>
+          <blockquote>To illuminate pathways in STEM education through engaging robotics programs and robust support for competitive robotics, inspiring the next generation of innovators.</blockquote>
+          <cite>Radiant Robotics founding statement</cite>
+        </figure>
+      </div>
+    </section>
+
+    <!--
+      Impact numbers: add this section once you have figures to share.
+      <section class="section-tight section-alt">
+        <div class="container grid grid-4 center">
+          <div><h2>120+</h2><p>Students reached</p></div>
+          ...
+        </div>
+      </section>
+    -->
+
+    <!-- Get involved -->
+    <section class="section section-alt" id="get-involved">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Get involved</span>
+          <h2>Help us inspire more futures</h2>
+          <p class="lead">Your time, talent, and support go directly to educational robotics. There's a place for you on the team.</p>
+        </div>
+        <div class="grid grid-4">
+          <a class="card involve-card" href="https://forms.gle/5kPcod4YxZTphQbD8">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
+            </div>
+            <h3>Volunteer</h3>
+            <p>Help at events, workshops, and competitions.</p>
+            <span class="text-link">Sign up</span>
+          </a>
+          <a class="card involve-card" href="#contact">
+            <div class="icon purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4 2.5-2.5z"/></svg>
+            </div>
+            <h3>Mentor</h3>
+            <p>Share your engineering, coding, or business skills.</p>
+            <span class="text-link">Get in touch</span>
+          </a>
+          <a class="card involve-card" href="#contact">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg>
+            </div>
+            <h3>Sponsor</h3>
+            <p>Partner with us to put robots in more students' hands.</p>
+            <span class="text-link">Partner with us</span>
+          </a>
+          <a class="card involve-card" href="https://www.zeffy.com/en-US/donation-form/donate-to-make-a-difference-19010">
+            <div class="icon purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+            </div>
+            <h3>Donate</h3>
+            <p>Every gift supports students, teams, and programs.</p>
+            <span class="text-link">Give today</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership & contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Leadership &amp; contact</span>
+          <h2>The people behind Radiant Robotics</h2>
+          <p class="lead">Questions about our programs, team support, volunteering, or sponsorship? Reach out to any of us.</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="card">
+            <div class="person">
+              <div class="avatar" aria-hidden="true">AG</div>
+              <div>
+                <h3>Allen Gregory IV</h3>
+                <p class="role">Director</p>
+                <a href="mailto:allen@radiantrobotics.org">allen<wbr>@radiantrobotics.org</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="person">
+              <div class="avatar" aria-hidden="true">JW</div>
+              <div>
+                <h3>Jakob Wittry</h3>
+                <p class="role">Board Member</p>
+                <a href="mailto:jakob@radiantrobotics.org">jakob<wbr>@radiantrobotics.org</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="person">
+              <div class="avatar" aria-hidden="true">SB</div>
+              <div>
+                <h3>Suanne Bouvier</h3>
+                <p class="role">Board Member</p>
+                <a href="mailto:suanne@radiantrobotics.org">suanne<wbr>@radiantrobotics.org</a>
+              </div>
+            </div>
+          </div>
+          <!--
+            Add more people by copying one of the cards above.
+            To use a headshot, replace the avatar div with:
+            <img class="avatar" src="/assets/img/team/name.jpg" alt="">
+          -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="/brand/logo/radiant-robotics-horizontal-reversed.svg" alt="Radiant Robotics" width="286" height="32">
+          <p>Illuminating pathways in STEM education through engaging robotics programs and robust support for competitive robotics.</p>
+        </div>
+        <div>
+          <h4>Organization</h4>
+          <ul>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#programs">What we do</a></li>
+            <li><a href="#contact">Leadership</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get involved</h4>
+          <ul>
+            <li><a href="https://forms.gle/5kPcod4YxZTphQbD8">Volunteer</a></li>
+            <li><a href="#get-involved">Mentor</a></li>
+            <li><a href="#get-involved">Sponsor</a></li>
+            <li><a href="https://www.zeffy.com/en-US/donation-form/donate-to-make-a-difference-19010">Donate</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-people">
+            <li>Allen Gregory IV, Director<br><a href="mailto:allen@radiantrobotics.org">allen@radiantrobotics.org</a></li>
+            <li>Jakob Wittry, Board Member<br><a href="mailto:jakob@radiantrobotics.org">jakob@radiantrobotics.org</a></li>
+            <li>Suanne Bouvier, Board Member<br><a href="mailto:suanne@radiantrobotics.org">suanne@radiantrobotics.org</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Radiant Robotics. All rights reserved.</span>
+        <span>Radiant Robotics is a nonprofit organization.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
